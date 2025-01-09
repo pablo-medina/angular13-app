@@ -4,12 +4,13 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
-    "start:all": "ng serve --host 0.0.0.0 --disable-host-check",    
+    "start:all": "ng serve --host 0.0.0.0 --disable-host-check",
     "build:local": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
     "build": "ng build --output-path=dist --base-href=/angular13-app/",
-    "deploy": "npm run build && npx gh-pages -d dist"
+    "deploy": "npm run build && npx gh-pages -d dist",
+    "deploy:qr": "node show-deploy-qr"
   },
   "private": true,
   "dependencies": {
@@ -38,6 +39,7 @@
     "karma-coverage": "~2.1.0",
     "karma-jasmine": "~4.0.0",
     "karma-jasmine-html-reporter": "~1.7.0",
+    "qrcode": "^1.5.4",
     "typescript": "~4.6.2"
   }
 }
