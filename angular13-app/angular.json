@@ -20,7 +20,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "baseHref": "/angular13-app/",
+            "baseHref": "/",
             "outputPath": "dist/angular13-app",
             "index": "src/index.html",
             "main": "src/main.ts",
@@ -38,6 +38,7 @@
           },
           "configurations": {
             "production": {
+              "baseHref": "/angular13-app/",
               "budgets": [
                 {
                   "type": "initial",
