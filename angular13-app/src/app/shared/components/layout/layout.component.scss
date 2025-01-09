@@ -1,0 +1,37 @@
+$navbar-height-web: 2.5rem;
+$footer-height: 1.5rem;
+$inner-padding: 0.5rem;
+$vh: 100vh;
+
+:host {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    height: $vh;
+}
+
+.app-navbar {
+    color: #ffffff;
+    background-color: #000080;    
+    padding: $inner-padding;
+    flex-shrink: 0;
+}
+
+.app-content {  
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+    .app-content-main {        
+        flex: 1;
+        padding: $inner-padding;
+        overflow-y: auto;
+    }
+    .app-content-footer {
+        color: #ffffff;
+        height: $footer-height;
+        padding: $inner-padding;
+        background-color: #202080;
+        flex-shrink: 0;
+        text-align: center;
+    }
+}
