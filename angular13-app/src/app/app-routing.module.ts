@@ -4,16 +4,15 @@ import { LayoutComponent } from './shared/components/layout/layout.component';
 
 const routes: Routes = [
   {
-    path: 'dashboard',
+    path: '',
     component: LayoutComponent,
     children: [
       {
         path: '', loadChildren: () => import('./home/home.module').then(m => m.HomeModule)
       }
     ]
-  },
-  { path: '', redirectTo: 'dashboard', pathMatch: 'full' }, // Main route
-  { path: '**', redirectTo: 'dashboard' } // Default redirect
+  },  
+  { path: '**', redirectTo: '' } // Default redirect
 ];
 
 @NgModule({
