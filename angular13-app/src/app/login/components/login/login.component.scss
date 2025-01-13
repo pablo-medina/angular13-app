@@ -3,6 +3,12 @@ $hover-color: #3f51b5;
 $btn-hover-color: #3e4b87;
 $focus-color: #7986cb;
 
+:host {
+    display: flex;
+    flex-direction: column;
+    background-color: #f0f0ff;
+}
+
 * {
     margin: 0;
     padding: 0;

@@ -4,7 +4,7 @@
         <form [formGroup]="loginForm" (ngSubmit)="onSubmit()">
             <mat-form-field appearance="standard" class="input-group">
                 <mat-label>Username</mat-label>
-                <input matInput type="text" formControlName="username" placeholder="Username" />
+                <input matInput type="text" formControlName="username"/>
                 <mat-error *ngIf="loginForm.get('username')?.invalid && loginForm.get('password')?.touched">
                     Username is required
                 </mat-error>
@@ -12,7 +12,7 @@
 
             <mat-form-field appearance="standard" class="input-group">
                 <mat-label>Password</mat-label>
-                <input matInput type="password" formControlName="password" placeholder="Password" />
+                <input matInput type="password" formControlName="password"/>
                 <mat-error *ngIf="loginForm.get('password')?.invalid && loginForm.get('password')?.touched"></mat-error>
             </mat-form-field>
 
