@@ -1,5 +1,6 @@
 import { Injectable } from '@angular/core';
 import { Observable, of } from 'rxjs';
+import { NavigationService } from './navigation.service';
 
 @Injectable({
   providedIn: 'root'
@@ -7,7 +8,9 @@ import { Observable, of } from 'rxjs';
 export class AuthService {
   private readonly TOKEN_KEY = 'authToken';  
 
-  constructor() { }
+  constructor(
+    private navigationService: NavigationService
+  ) { }
 
   login(username: string, password: string): Observable<any> {
     this.setToken('123456');
@@ -16,6 +19,7 @@ export class AuthService {
 
   logout(): void {
     this.clearToken();
+    this.navigationService.redirectToLogin();
   }
 
   isLoggedIn(): boolean {

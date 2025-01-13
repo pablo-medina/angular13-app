@@ -1,6 +1,5 @@
 $primary-color: #5c6bc0;
 $hover-color: #3f51b5;
-$border-color: #ccc;
 $btn-hover-color: #3e4b87;
 $focus-color: #7986cb;
 
@@ -14,7 +13,7 @@ $focus-color: #7986cb;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: calc(vaR(--vh, 1vh) * 100);
+    height: calc(var(--vh, 1vh) * 100);
 }
 
 .login-box {
@@ -32,6 +31,7 @@ $focus-color: #7986cb;
     }
 
     .input-group {
+        width: 100%;
         margin-bottom: 20px;
 
         label {
@@ -43,10 +43,9 @@ $focus-color: #7986cb;
 
         input {
             width: 100%;
-            padding: 10px;
-            border: 1px solid $border-color;
+            padding: 10px;            
             border-radius: 5px;
-            font-size: 1.25rem;
+            font-size: 1rem;
             outline: none;
             transition: border-color 0.3s ease;
 
