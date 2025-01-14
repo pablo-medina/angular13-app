@@ -29,7 +29,7 @@ export class LayoutComponent implements OnInit {
   }
 
   @HostListener('window:orientationchange', ['$event'])
-  onOrientationchange(event: Event) {
+  onOrientationChange(event: Event) {
     this.updateMobileStatus();
   }
 
