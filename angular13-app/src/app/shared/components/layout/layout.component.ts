@@ -19,7 +19,7 @@ export class LayoutComponent implements OnInit {
     this.updateMobileStatus();
   }
 
-  public logout(): void {    
+  public logout(): void {
     this.authService.logout();
   }
 
@@ -28,14 +28,19 @@ export class LayoutComponent implements OnInit {
     this.updateMobileStatus();
   }
 
+  @HostListener('window:orientationchange', ['$event'])
+  onOrientationchange(event: Event) {
+    this.updateMobileStatus();
+  }
+
   private updateMobileStatus(): void {
     this.isMobile = window.innerWidth <= 768;
   }
 
   closeSidenav(sidenav: MatSidenav): void {
-    if (this.isMobile) {            
+    if (this.isMobile) {
       this.sidenavOpened = false;
-      sidenav.close().then(() => {});
-    }    
+      sidenav.close().then(() => { });
+    }
   }
 }
