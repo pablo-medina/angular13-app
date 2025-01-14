@@ -1,6 +1,6 @@
 {
   "configVersion": 1,
-  "timestamp": 1736858696204,
+  "timestamp": 1736859105007,
   "index": "/angular13-app/index.html",
   "assetGroups": [
     {
@@ -14,7 +14,7 @@
         "/angular13-app/378.1d3775e649d88d77.js",
         "/angular13-app/favicon.ico",
         "/angular13-app/index.html",
-        "/angular13-app/main.9bc37bedbbf22aec.js",
+        "/angular13-app/main.1ca6b1665f3e3e29.js",
         "/angular13-app/manifest.webmanifest",
         "/angular13-app/polyfills.a8f9adde67b509e5.js",
         "/angular13-app/runtime.a393502c4ab97852.js",
@@ -54,8 +54,8 @@
     "/angular13-app/assets/icons/icon-72x72.png": "c457e56089a36952cd67156f9996bc4ce54a5ed9",
     "/angular13-app/assets/icons/icon-96x96.png": "3914125a4b445bf111c5627875fc190f560daa41",
     "/angular13-app/favicon.ico": "22f6a4a3bcaafafb0254e0f2fa4ceb89e505e8b2",
-    "/angular13-app/index.html": "886ff8934689447b7458ca5fbdc6b76063b43e31",
-    "/angular13-app/main.9bc37bedbbf22aec.js": "b7dc65aeee350230c43f4f744020cc78ba9b5944",
+    "/angular13-app/index.html": "2ded25c74923230405cb152b92a59db7bc7f4597",
+    "/angular13-app/main.1ca6b1665f3e3e29.js": "b19b334e9b200f641b1007e47481d9307b38510f",
     "/angular13-app/manifest.webmanifest": "059a3eac21f1f82c2b8166a96385ee82322f6b83",
     "/angular13-app/polyfills.a8f9adde67b509e5.js": "a729761ae0f69e9a261b9c60753f39af6c850db3",
     "/angular13-app/runtime.a393502c4ab97852.js": "0ddb5716dbd1cd8f6f474eb8b1a3cb2a07bcf2b2",
