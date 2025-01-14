@@ -81,6 +81,7 @@ $focus-color: #7986cb;
 @media (max-width: 768px) {
     .login-box {
         border: none;
+        border-radius: 0;
         box-shadow: none;
         padding: 1rem;
         width: 100%;

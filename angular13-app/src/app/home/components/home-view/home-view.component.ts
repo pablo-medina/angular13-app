@@ -14,9 +14,4 @@ export class HomeViewComponent implements OnInit {
 
   ngOnInit(): void {
   }
-
-  onLogout(): void {
-    this.authService.logout();
-  }
-
 }

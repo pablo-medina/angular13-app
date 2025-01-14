@@ -1,4 +1,4 @@
-$navbar-height-web: 2.5rem;
+$navbar-height-web: 2rem;
 $footer-height: 1.5rem;
 $inner-padding: 0.5rem;
 
@@ -9,11 +9,40 @@ $inner-padding: 0.5rem;
     height: calc(var(--vh, 1vh) * 100);
 }
 
+@media (min-width: 600px) {
+    .sidenav-toggle-btn {
+        display: none;
+    }
+}
+
+.sidenav-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: calc(var(--vh, 1vh) * 100);
+    .sidenav-menu {
+        height: calc(var(--vh, 1vh) * 100);
+    }
+    .main-content {
+        height: calc(var(--vh, 1vh) * 100);
+        overflow: auto;
+    }
+}
+
+.sidenav-toggle-btn {
+    border: none;
+    outline: none;
+    color: #fff;
+    background: transparent;
+    font-size: 2rem;
+}
+
 .app-navbar {
     color: #ffffff;
     background-color: #000080;    
     padding: $inner-padding;
     flex-shrink: 0;
+    height: $navbar-height-web;
 }
 
 .app-content {  
@@ -33,4 +62,29 @@ $inner-padding: 0.5rem;
         flex-shrink: 0;
         text-align: center;
     }
+}
+
+mat-sidenav {
+    width: 18rem;
+}
+
+@media (max-width: 768px) {
+    mat-sidenav {
+        width: 12rem;        
+    }
+
+    mat-sidenav[opened] {
+        display: none;
+    }
+
+    mat-sidenav[mode='side'] {
+        position: absolute;
+        width: 100%;
+    }
+}
+
+@media (min-width: 769px) {
+    mat-sidenav {        
+        display: block;        
+    }    
 }
