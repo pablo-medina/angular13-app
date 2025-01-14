@@ -1,6 +1,6 @@
 <header>
     <nav class="app-navbar" id="app-navbar">
-        <button class="sidenav-toggle-btn" mat-icon-button (click)="sidenav.toggle()">
+        <button class="sidenav-toggle-btn" mat-icon-button (click)="sidenav.toggle()" *ngIf="isMobile">
             <mat-icon>menu</mat-icon>
         </button>
     </nav>

@@ -9,12 +9,6 @@ $inner-padding: 0.5rem;
     height: calc(var(--vh, 1vh) * 100);
 }
 
-@media (min-width: 600px) {
-    .sidenav-toggle-btn {
-        display: none;
-    }
-}
-
 .sidenav-container {
     display: flex;
     flex-direction: column;

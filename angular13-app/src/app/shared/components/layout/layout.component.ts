@@ -34,7 +34,8 @@ export class LayoutComponent implements OnInit {
   }
 
   private updateMobileStatus(): void {
-    this.isMobile = window.innerWidth <= 768;
+    const userAgent = navigator.userAgent.toLowerCase();
+    this.isMobile = (window.innerWidth <= 768) || /android|iphone|ipod|windows phone|blackberry|webos/.test(userAgent);
   }
 
   closeSidenav(sidenav: MatSidenav): void {
