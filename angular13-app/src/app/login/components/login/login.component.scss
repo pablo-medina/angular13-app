@@ -23,6 +23,7 @@ $full-vh: calc(var(--vh, 1vh) * 100);
     align-items: center;
     flex-grow: 1;
     height: $full-vh;
+
     .welcome {
         display: flex;
         flex-direction: column;
@@ -36,8 +37,9 @@ $full-vh: calc(var(--vh, 1vh) * 100);
         height: $full-vh;
         padding: 2rem;
         font-size: 2.15rem;
-        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);        
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
     }
+
     .login-box {
         display: flex;
         flex-direction: column;
@@ -50,53 +52,54 @@ $full-vh: calc(var(--vh, 1vh) * 100);
         min-width: 400px;
         width: 40vw;
         max-width: 600px;
-    
+
         .login-form {
             display: flex;
             flex-direction: column;
             width: 100%;
+            font-size: 1.25rem;
         }
-    
+
         h2 {
-            text-align:center;
-            margin-bottom: 20px;
+            text-align: center;
             color: #333;
+            font-size: 1.75rem;
         }
-    
+
         .input-group {
             width: 100%;
-            margin-bottom: 20px;
-    
+            margin-bottom: 1rem;
+
             label {
                 display: block;
-                margin-bottom: 5px;
+                margin-bottom: 0.75rem;
                 font-size: 1rem;
                 color: #333;
             }
-    
+
             input {
                 width: 100%;
-                padding: 10px;            
+                padding: 0;
                 border-radius: 5px;
-                font-size: 1rem;
+                font-size: 1.15rem;
                 outline: none;
                 transition: border-color 0.3s ease;
-    
+
                 &:focus {
                     border-color: $focus-color;
                 }
             }
         }
-    
-        .login-btn {                  
-            align-self: center;      
+
+        .login-btn {
+            align-self: center;
             transition: all 0.3s ease;
-    
+
             &:active {
                 transform: translateY(1px);
             }
         }
-    }   
+    }
 }
 
 @media (max-width: 768px) {
@@ -104,6 +107,7 @@ $full-vh: calc(var(--vh, 1vh) * 100);
         .welcome {
             display: none;
         }
+
         .login-box {
             border: none;
             border-radius: 0;
@@ -115,5 +119,5 @@ $full-vh: calc(var(--vh, 1vh) * 100);
             flex-direction: column;
             justify-content: center;
         }
-    }    
+    }
 }
