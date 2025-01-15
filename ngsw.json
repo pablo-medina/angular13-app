@@ -1,6 +1,6 @@
 {
   "configVersion": 1,
-  "timestamp": 1736861471534,
+  "timestamp": 1736903785038,
   "index": "/angular13-app/index.html",
   "assetGroups": [
     {
@@ -14,7 +14,7 @@
         "/angular13-app/378.1d3775e649d88d77.js",
         "/angular13-app/favicon.ico",
         "/angular13-app/index.html",
-        "/angular13-app/main.c7e039fdba79f5dc.js",
+        "/angular13-app/main.fbcff4fdd4370ba2.js",
         "/angular13-app/manifest.webmanifest",
         "/angular13-app/polyfills.a8f9adde67b509e5.js",
         "/angular13-app/runtime.a393502c4ab97852.js",
@@ -37,7 +37,9 @@
         "/angular13-app/assets/icons/icon-384x384.png",
         "/angular13-app/assets/icons/icon-512x512.png",
         "/angular13-app/assets/icons/icon-72x72.png",
-        "/angular13-app/assets/icons/icon-96x96.png"
+        "/angular13-app/assets/icons/icon-96x96.png",
+        "/angular13-app/assets/login_bg.jpg",
+        "/angular13-app/login_bg.a0dc7daf8d3d46ae.jpg"
       ],
       "patterns": []
     }
@@ -53,9 +55,11 @@
     "/angular13-app/assets/icons/icon-512x512.png": "559d9c4318b45a1f2b10596bbb4c960fe521dbcc",
     "/angular13-app/assets/icons/icon-72x72.png": "c457e56089a36952cd67156f9996bc4ce54a5ed9",
     "/angular13-app/assets/icons/icon-96x96.png": "3914125a4b445bf111c5627875fc190f560daa41",
+    "/angular13-app/assets/login_bg.jpg": "04eb755b274ca8c45b54f501702e9f4eb114ae03",
     "/angular13-app/favicon.ico": "22f6a4a3bcaafafb0254e0f2fa4ceb89e505e8b2",
-    "/angular13-app/index.html": "991c8be98de5df28407c4f8715f713576f0e0295",
-    "/angular13-app/main.c7e039fdba79f5dc.js": "038617e827111f24855709780da0f44060265e89",
+    "/angular13-app/index.html": "51087d4b2efc96178ee1a5b2984b3441703d61d7",
+    "/angular13-app/login_bg.a0dc7daf8d3d46ae.jpg": "04eb755b274ca8c45b54f501702e9f4eb114ae03",
+    "/angular13-app/main.fbcff4fdd4370ba2.js": "d39098cc52269b7cfb7e85c761db034c014c26e2",
     "/angular13-app/manifest.webmanifest": "059a3eac21f1f82c2b8166a96385ee82322f6b83",
     "/angular13-app/polyfills.a8f9adde67b509e5.js": "a729761ae0f69e9a261b9c60753f39af6c850db3",
     "/angular13-app/runtime.a393502c4ab97852.js": "0ddb5716dbd1cd8f6f474eb8b1a3cb2a07bcf2b2",
