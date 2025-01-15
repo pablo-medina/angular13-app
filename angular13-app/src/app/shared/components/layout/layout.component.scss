@@ -37,6 +37,7 @@ $inner-padding: 0.5rem;
     padding: $inner-padding;
     flex-shrink: 0;
     height: $navbar-height-web;
+    user-select: none;
 }
 
 .app-content {  
@@ -49,6 +50,7 @@ $inner-padding: 0.5rem;
         overflow-y: auto;
     }
     .app-content-footer {
+        user-select: none;
         color: #ffffff;
         height: $footer-height;
         padding: $inner-padding;
@@ -56,6 +58,14 @@ $inner-padding: 0.5rem;
         flex-shrink: 0;
         text-align: center;
     }
+}
+
+.brand-desktop {
+    padding: 0;
+}
+
+.brand-mobile {
+    padding: 1rem;
 }
 
 mat-sidenav {

@@ -1,21 +1,37 @@
-<header>
-    <nav class="app-navbar" id="app-navbar">
-        <button class="sidenav-toggle-btn" mat-icon-button (click)="sidenav.toggle()" *ngIf="isMobile">
-            <mat-icon>menu</mat-icon>
-        </button>
-    </nav>
-</header>
+<ng-template #layoutHeader>
+    <header>
+        <nav class="app-navbar" id="app-navbar">
+            <button class="sidenav-toggle-btn" mat-icon-button (click)="sidenav.toggle()" *ngIf="isMobile">
+                <mat-icon>menu</mat-icon>
+            </button>
+            <div class="brand-desktop" *ngIf="!isMobile">
+                <h2>My App</h2>
+                <hr />
+            </div>
+        </nav>
+    </header>
+</ng-template>
 
+<ng-container *ngIf="!isMobile">
+    <ng-container *ngTemplateOutlet="layoutHeader"></ng-container>
+</ng-container>
 <mat-sidenav-container class="sidenav-container">
     <mat-sidenav class="sidenav-menu" #sidenav [mode]="isMobile ? 'over' : 'side'"
         [opened]="!isMobile || sidenavOpened">
         <mat-nav-list>
+            <div class="brand-mobile" *ngIf="isMobile">
+                <h2>My App</h2>
+                <hr />
+            </div>
             <a mat-list-item [routerLink]="['/home']" (click)="closeSidenav(sidenav)">Home</a>
             <a mat-list-item (click)="logout()">Logout</a>
         </mat-nav-list>
     </mat-sidenav>
 
     <mat-sidenav-content class="app-content" id="app-content">
+        <ng-container *ngIf="isMobile">
+            <ng-container *ngTemplateOutlet="layoutHeader"></ng-container>
+        </ng-container>
         <div class="app-content-main" id="app-content-main">
             <router-outlet></router-outlet>
         </div>
