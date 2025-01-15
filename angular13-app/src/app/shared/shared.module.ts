@@ -6,10 +6,13 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatListModule } from '@angular/material/list';
 import { MatIconModule } from '@angular/material/icon';
+import { MatInputModule } from '@angular/material/input';
+import { AutoFocusDirective } from './directives/auto-focus.directive';
 
 @NgModule({
   declarations: [
-    LayoutComponent
+    LayoutComponent,
+    AutoFocusDirective
   ],
   imports: [
     CommonModule,
@@ -17,10 +20,12 @@ import { MatIconModule } from '@angular/material/icon';
     BrowserAnimationsModule,
     MatSidenavModule,
     MatListModule,
-    MatIconModule
+    MatIconModule,
+    MatInputModule
   ],
   exports: [
-    LayoutComponent
+    LayoutComponent,
+    AutoFocusDirective
   ]
 })
 export class SharedModule { }

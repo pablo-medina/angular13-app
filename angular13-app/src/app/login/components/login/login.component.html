@@ -7,7 +7,7 @@
         <form class="login-form" [formGroup]="loginForm" (ngSubmit)="onSubmit()">
             <mat-form-field appearance="standard" class="input-group">
                 <mat-label>Username</mat-label>
-                <input matInput type="text" formControlName="username"/>
+                <input matInput type="text" formControlName="username" autoFocus />
                 <mat-error *ngIf="loginForm.get('username')?.invalid && loginForm.get('password')?.touched">
                     Username is required
                 </mat-error>
