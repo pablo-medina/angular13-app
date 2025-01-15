@@ -26,11 +26,17 @@ $full-vh: calc(var(--vh, 1vh) * 100);
     .welcome {
         display: flex;
         flex-direction: column;
-        background: rgb(17, 56, 117);    
+        background: rgb(17, 56, 117);
+        background-image: url('../../../../assets/login_bg.jpg');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
         color: #fff;
         flex-grow: 1;
         height: $full-vh;
-        padding: 2rem;    
+        padding: 2rem;
+        font-size: 2.15rem;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);        
     }
     .login-box {
         display: flex;
