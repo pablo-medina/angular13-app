@@ -1,3 +1,5 @@
 export const environment = {
-  production: true
+  production: true,
+  pwaMessageDuration: 15,
+  pwaMessageRejectTimeout: 86400,
 };
